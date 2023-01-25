@@ -22,6 +22,10 @@ describe("Intern", () => {
         const obj = new Intern("John", 25, "email@email.com", school)
         expect(obj.getSchool()).toBe(school);
     })
-
+    it("should return role", () => {
+        const obj = new Intern("John", 25, "email@email.com", "SchoolName")
+        expect(obj.getRole()).toBe("Intern");
     })
+
+})
 })
