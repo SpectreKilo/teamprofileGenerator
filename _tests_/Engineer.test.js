@@ -10,17 +10,17 @@ describe("Engineer", () => {
     it("should return an id", () => {
         const num = "25";
         const obj = new Engineer("John", num, "email@email.com", "username")
-        expect(obj.getName()).toBe(num);
+        expect(obj.getId()).toBe(num);
     })
     it("should return an email", () => {
         const email = "email@email.com";
         const obj = new Engineer("John", 25, email, "username")
-        expect(obj.getName()).toBe(email);
+        expect(obj.getEmail()).toBe(email);
     })
     it("should return github username", () => {
         const github = "username";
         const obj = new Engineer("John", 25, "email@email.com", github)
-        expect(obj.getName()).toBe(github);
+        expect(obj.getGithub()).toBe(github);
     })
 })
 })
