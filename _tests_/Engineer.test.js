@@ -8,7 +8,7 @@ describe("Engineer", () => {
         expect(obj.getName()).toBe(name);
     })
     it("should return an id", () => {
-        const num = "25";
+        const num = 25;
         const obj = new Engineer("John", num, "email@email.com", "username")
         expect(obj.getId()).toBe(num);
     })
