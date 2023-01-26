@@ -1,8 +1,8 @@
 const Engineer = require("../lib/Engineer");
 const Manager = require("../lib/Manager");
 const generateManagerHTML = (manager) => {
-    return `<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-    <div class="card-header">${manager.name} , Manager \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0<img src="images/cup-fill.svg"></div>
+    return `<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header">${manager.name} , Manager </div>
     <div class="card-body">
       <h5 class="card-title"><i class="bi bi-eyeglasses"></i>ID #${manager.id}</h5>
       <p class="card-text">Email: <a href="mailto: ${manager.email}" target="_blank">${manager.email}</a></p>
@@ -12,8 +12,8 @@ const generateManagerHTML = (manager) => {
 }
 
 const generateEngineerHTML = (engineer) => {
-    return `<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-    <div class="card-header">${engineer.name} , Engineer \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0<img src="images/eyeglasses.svg"></div>
+    return `<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+    <div class="card-header">${engineer.name} , Engineer </div>
     <div class="card-body">
       <h5 class="card-title">ID #${engineer.id}</h5>
       <p class="card-text">Email: <a href="mailto: ${engineer.email}" target="_blank">${engineer.email}</a></p>
@@ -23,8 +23,8 @@ const generateEngineerHTML = (engineer) => {
   }
 
   const generateInternHTML = (intern) => {
-    return `<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-    <div class="card-header">${intern.name} , Intern \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0<img src="images/book.svg"></div>
+    return `<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+    <div class="card-header">${intern.name} , Intern</div>
     <div class="card-body">
       <h5 class="card-title">ID #${intern.id}</h5>
       <p class="card-text">Email: <a href="mailto:${intern.email}" target="_blank">${intern.email}</a></p>
